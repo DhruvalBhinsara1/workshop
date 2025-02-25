@@ -5,8 +5,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed top-0 left-0 px-4 py-3 flex items-center justify-between border-b bg-white z-50">
-      <div className="text-lg font-bold text-pink-400">SneakPeak.co</div>
+    <nav className="w-full fixed top-0 left-0 px-4 py-3 flex items-center justify-between border-b bg-transparent">
+      <div className="text-lg font-bold text-red-600">SneakPeak.co</div>
       <ul className="hidden md:flex gap-4 text-sm">
         <li className="cursor-pointer">Home</li>
         <li className="cursor-pointer">Shop</li>
@@ -14,7 +14,7 @@ export default function Navbar() {
         <li className="cursor-pointer">Contact</li>
       </ul>
       <button 
-        className="md:hidden text-pink-400 font-bold text-lg focus:outline-none" 
+        className="md:hidden text-pink-orange font-bold text-lg focus:outline-none" 
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         ☰
