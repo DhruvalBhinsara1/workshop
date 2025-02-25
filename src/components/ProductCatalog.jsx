@@ -9,6 +9,9 @@ const products = [
   { id: 3, name: "Adidas Originals", price: "₹15,000", image: "/src/assets/shoe3.png" },
   { id: 4, name: "Adidas FreeFoam", price: "₹6,000", image: "/src/assets/shoe4.png" },
   { id: 5, name: "Adidas MemoryLite", price: "₹2,000", image: "/src/assets/shoe5.png" },
+  { id: 6, name: "Adidas MemoryLite", price: "₹6,999", image: "/src/assets/shoe6.png" },
+  { id: 7, name: "Adidas MemoryLite", price: "₹3,500", image: "/src/assets/shoe7.png" },
+  { id: 9, name: "Adidas MemoryLite", price: "₹5,000", image: "/src/assets/shoe8.png" },
 ];
 
 export default function ProductCatalog() {
