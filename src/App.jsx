@@ -8,30 +8,11 @@ import ProductPage from "./pages/ProductPage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Modal from "./components/Modal";
-import Marquee from "./components/Marquee";
 import InfoSection from "./components/InfoSection";
 
 export default function App() {
-  const scrollStyle = {
-    overflowY: "scroll",
-    scrollbarWidth: "none", // Firefox
-    msOverflowStyle: "none", // IE and Edge
-  };
-
-  const webkitScrollbarStyle = {
-    display: "none", // Chrome, Safari, Opera
-  };
-
   return (
-    <div style={scrollStyle}>
-      <style>
-        {`
-          /* Webkit-specific scrollbar hiding */
-          div::-webkit-scrollbar {
-            display: none;
-          }
-        `}
-      </style>
+    <div>
       <Router>
         <Navbar />
         <Modal />

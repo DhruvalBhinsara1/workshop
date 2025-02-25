@@ -14,8 +14,8 @@ export default function ProductCatalog() {
   ];
 
   return (
-    <section className="pb-25 py-25 px-6 bg-black">
-      <h2 className="text-6xl text-white font-extrabold text-center mb-25">
+    <section className="pb-25 py-14 px-6 bg-red-500">
+      <h2 className="text-6xl text-white font-extrabold text-center mb-16">
         TOP TRENDING
       </h2>
 
@@ -24,9 +24,9 @@ export default function ProductCatalog() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-gradient-to-br from-red-500 to-red-600 p-5 rounded-2xl shadow-lg hover:shadow-2xl flex flex-col transition-transform duration-300 transform hover:-translate-y-3 border border-gray-700"
+            className="bg-white/1 backdrop-blur-md border border-white/30 p-5 rounded-2xl shadow-lg hover:shadow-2xl flex flex-col transition-transform duration-300 transform hover:-translate-y-3"
           >
-            <div className="w-full h-48 flex items-center justify-center mb-6 bg-white rounded-xl overflow-hidden">
+            <div className="w-full h-48 flex items-center justify-center mb-6 bg-white/30 rounded-xl overflow-hidden">
               <img
                 src={product.image}
                 alt={product.name}
@@ -43,7 +43,7 @@ export default function ProductCatalog() {
             </div>
 
             {product.inStock ? (
-              <button className="mt-6 w-full px-4 py-2 bg-black text-white rounded-lg font-medium hover:bg-white hover:text-black hover:scale-105 transition-transform duration-200 shadow-md">
+              <button className="mt-6 w-full px-4 py-2 bg-white text-black rounded-lg font-medium hover:bg-black hover:text-white hover:scale-105 transition-transform duration-200 shadow-md">
                 Add to Cart
               </button>
             ) : (

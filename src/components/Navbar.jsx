@@ -16,7 +16,7 @@ export default function Navbar() {
           SneakPeak.co
         </Link>
 
-        {/* Hamburger Icon - Visible on small screens */}
+        {/* Hamburger Icon (Mobile) */}
         <button
           className="lg:hidden text-2xl"
           onClick={() => setMenuOpen(!isMenuOpen)}
@@ -27,16 +27,13 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <ul className="hidden lg:flex space-x-6 items-center">
-          {["Home", "Shop", "About", "Contact"].map((item, index) => (
-            <li key={index}>
-              <Link to={`/${item.toLowerCase()}`} className="font-medium hover:text-red-500">
-                {item}
-              </Link>
-            </li>
-          ))}
+          <li><Link to="/" className="font-medium hover:text-red-500">Home</Link></li>
+          <li><Link to="/products" className="font-medium hover:text-red-500">Shop</Link></li>
+          <li><Link to="/about" className="font-medium hover:text-red-500">About</Link></li>
+          <li><Link to="/contact" className="font-medium hover:text-red-500">Contact</Link></li>
         </ul>
 
-        {/* Auth Buttons - Large Screens */}
+        {/* Desktop Auth Buttons */}
         <div className="hidden lg:flex space-x-4">
           <button
             onClick={() => setLoginOpen(true)}
@@ -54,53 +51,45 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Menu */}
-<div
-  className={`lg:hidden fixed top-0 left-0 w-full h-screen bg-gray-100/80 backdrop-blur-sm z-40 flex flex-col justify-center items-center space-y-6 transition-transform duration-300 ease-in-out ${
-    isMenuOpen ? "translate-y-0" : "-translate-y-full"
-  }`}
->
-  {["Home", "Shop", "About", "Contact"].map((item, index) => (
-    <Link
-      key={index}
-      to={`/${item.toLowerCase()}`}
-      onClick={() => setMenuOpen(false)}
-      className="text-lg font-semibold hover:text-red-500 transition"
-    >
-      {item}
-    </Link>
-  ))}
+      <div
+        className={`lg:hidden fixed top-0 left-0 w-full h-screen bg-gray-100/80 backdrop-blur-sm z-40 flex flex-col justify-center items-center space-y-6 transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <Link to="/" onClick={() => setMenuOpen(false)} className="text-lg font-semibold hover:text-red-500">Home</Link>
+        <Link to="/products" onClick={() => setMenuOpen(false)} className="text-lg font-semibold hover:text-red-500">Shop</Link>
+        <Link to="/about" onClick={() => setMenuOpen(false)} className="text-lg font-semibold hover:text-red-500">About</Link>
+        <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-lg font-semibold hover:text-red-500">Contact</Link>
 
-  {/* Mobile Auth Buttons */}
-  <div className="flex flex-col w-4/5 space-y-3">
-    <button
-      onClick={() => {
-        setLoginOpen(true);
-        setMenuOpen(false);
-      }}
-      className="py-2 border border-black rounded-lg font-medium hover:bg-black hover:text-white transition"
-    >
-      Login
-    </button>
-    <button
-      onClick={() => {
-        setSignUpOpen(true);
-        setMenuOpen(false);
-      }}
-      className="py-2 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition"
-    >
-      Sign Up
-    </button>
-  </div>
-</div>
+        {/* Mobile Auth Buttons */}
+        <div className="flex flex-col w-4/5 space-y-3">
+          <button
+            onClick={() => {
+              setLoginOpen(true);
+              setMenuOpen(false);
+            }}
+            className="py-2 border border-black rounded-lg font-medium hover:bg-black hover:text-white transition"
+          >
+            Login
+          </button>
+          <button
+            onClick={() => {
+              setSignUpOpen(true);
+              setMenuOpen(false);
+            }}
+            className="py-2 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
 
       {/* Login Modal */}
       <Modal isOpen={isLoginOpen} onClose={() => setLoginOpen(false)} title="Login">
         <form className="flex flex-col gap-4">
           <input type="email" placeholder="Email" className="px-3 py-2 border rounded focus:ring-red-500 focus:outline-none" required />
           <input type="password" placeholder="Password" className="px-3 py-2 border rounded focus:ring-red-500 focus:outline-none" required />
-          <button type="submit" className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            Login
-          </button>
+          <button type="submit" className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">Login</button>
         </form>
       </Modal>
 
@@ -110,9 +99,7 @@ export default function Navbar() {
           <input type="text" placeholder="Full Name" className="px-3 py-2 border rounded focus:ring-red-500 focus:outline-none" required />
           <input type="email" placeholder="Email" className="px-3 py-2 border rounded focus:ring-red-500 focus:outline-none" required />
           <input type="password" placeholder="Password" className="px-3 py-2 border rounded focus:ring-red-500 focus:outline-none" required />
-          <button type="submit" className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
-            Sign Up
-          </button>
+          <button type="submit" className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">Sign Up</button>
         </form>
       </Modal>
     </>
