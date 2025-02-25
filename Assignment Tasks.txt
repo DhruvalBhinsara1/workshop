@@ -1,0 +1,6 @@
+1) Make a login/sign-up page ✅
+2) Make a product details page ✅
+3) Make a good backend so it can save the login details
+4) Make a contact me page ✅
+5) Make the footer bigger
+6) Make an About Page ✅
