@@ -5,7 +5,7 @@ export default function SplashScreen() {
     <section className="relative h-screen w-full flex justify-center items-center overflow-hidden">
       <video
         className="absolute w-full h-full object-cover opacity-95"
-        src="/public/backgroundvid.mp4"
+        src="/backgroundvid.mp4"
         autoPlay
         muted
         loop
