@@ -4,14 +4,14 @@ import { IoBag } from "react-icons/io5";
 
 export default function ProductCatalog() {
   const products = [
-    { id: 1, name: "Adidas Running Shoes", price: "₹12,000", description: "Engineered for long-distance runs with breathable mesh and ultimate grip.", image: "/src/assets/shoe1.png", inStock: true },
-    { id: 2, name: "Adidas Sambas", price: "₹9,000", description: "Timeless sneakers blending retro style with everyday comfort.", image: "/src/assets/shoe2.png", inStock: false },
-    { id: 3, name: "Adidas Originals", price: "₹15,000", description: "Iconic streetwear shoes designed for both style and durability.", image: "/src/assets/shoe3.png", inStock: true },
-    { id: 4, name: "Adidas FreeFoam", price: "₹6,000", description: "Lightweight and flexible, perfect for casual outings and gym sessions.", image: "/src/assets/shoe4.png", inStock: true },
-    { id: 5, name: "Adidas MemoryLite", price: "₹2,000", description: "Soft memory foam insoles ensure all-day comfort on the move.", image: "/src/assets/shoe5.png", inStock: false },
-    { id: 6, name: "Adidas SprintBoost", price: "₹6,999", description: "Boost your performance with enhanced midsole cushioning and support.", image: "/src/assets/shoe6.png", inStock: true },
-    { id: 7, name: "Adidas TrailBlazer", price: "₹3,500", description: "Built for rugged terrain, offering stability and weather resistance.", image: "/src/assets/shoe7.png", inStock: true },
-    { id: 8, name: "Adidas CloudStep", price: "₹5,000", description: "Ultra-light sneakers for effortless walking and everyday wear.", image: "/src/assets/shoe8.png", inStock: false },
+    { id: 1, name: "Adidas Running Shoes", price: "₹12,000", description: "Engineered for long-distance runs with breathable mesh and ultimate grip.", image: "/public/shoe1.png", inStock: true },
+    { id: 2, name: "Adidas Sambas", price: "₹9,000", description: "Timeless sneakers blending retro style with everyday comfort.", image: "/public/shoe2.png", inStock: false },
+    { id: 3, name: "Adidas Originals", price: "₹15,000", description: "Iconic streetwear shoes designed for both style and durability.", image: "/public/shoe3.png", inStock: true },
+    { id: 4, name: "Adidas FreeFoam", price: "₹6,000", description: "Lightweight and flexible, perfect for casual outings and gym sessions.", image: "/public/shoe4.png", inStock: true },
+    { id: 5, name: "Adidas MemoryLite", price: "₹2,000", description: "Soft memory foam insoles ensure all-day comfort on the move.", image: "/public/shoe5.png", inStock: false },
+    { id: 6, name: "Adidas SprintBoost", price: "₹6,999", description: "Boost your performance with enhanced midsole cushioning and support.", image: "/public/shoe6.png", inStock: true },
+    { id: 7, name: "Adidas TrailBlazer", price: "₹3,500", description: "Built for rugged terrain, offering stability and weather resistance.", image: "/public/shoe7.png", inStock: true },
+    { id: 8, name: "Adidas CloudStep", price: "₹5,000", description: "Ultra-light sneakers for effortless walking and everyday wear.", image: "/public/shoe8.png", inStock: false },
   ];
 
   return (
