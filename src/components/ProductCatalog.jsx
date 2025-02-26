@@ -1,5 +1,6 @@
 // ProductCatalog.jsx
 import React from "react";
+import { IoBag } from "react-icons/io5";
 
 export default function ProductCatalog() {
   const products = [
@@ -44,11 +45,11 @@ export default function ProductCatalog() {
 
             {product.inStock ? (
               <button className="mt-6 w-full px-4 py-2 bg-white text-black rounded-lg font-medium hover:bg-black hover:text-white hover:scale-105 transition-transform duration-200 shadow-md">
-                Add to Cart
+                Add to Bag
               </button>
             ) : (
               <button
-                className="mt-6 w-full px-4 py-2 bg-gray-500 text-black rounded-lg font-medium cursor-not-allowed opacity-70"
+                className="mt-6 w-full px-4 py-2 bg-yellow-500 text-black rounded-lg font-medium cursor-not-allowed opacity-70"
                 disabled
               >
                 Out of Stock

@@ -13,11 +13,10 @@ export default function SplashScreen() {
       />
       <div className="absolute inset-0 bg-black/40"></div> {/* Dark overlay */}
       <h1
-  style={{ fontFamily: "Miles-Regular, sans-serif" }}
-  className="relative z-10 text-white text-5xl font-extrabold font-mono tracking-wide drop-shadow-4xl"
->
-  SneakPeak.co
-</h1>
+        className="relative z-10 text-white text-5xl font-extrabold tracking-wide drop-shadow-4xl font-serif"
+      >
+        SneakPeak.co
+      </h1>
     </section>
   );
 }

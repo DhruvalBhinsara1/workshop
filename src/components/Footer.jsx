@@ -7,7 +7,7 @@ export default function Footer() {
       {/* Top Banner */}
       <div className="bg-yellow-400 py-4 flex justify-between items-center px-6">
         <h2 className="font-bold text-lg sm:text-xl text-black">JOIN SNEAKPEAK AND GET 10% OFF</h2>
-        <button className="bg-black text-white px-5 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+        <button className="bg-black text-white px-5 py-2 rounded-lg font-medium hover:bg-gray-100 hover:text-black transition-colors">
           SIGN UP FOR FREE →
         </button>
       </div>
