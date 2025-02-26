@@ -80,7 +80,7 @@ export default function Footer() {
         {/* FOLLOW US */}
         <div>
           <h4 className="font-bold mb-2">FOLLOW US</h4>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-2xl">
+          <a href="https://www.instagram.com/dhruvalbhinsara/" target="_blank" rel="noopener noreferrer" className="text-2xl">
             <FaInstagram />
           </a>
         </div>

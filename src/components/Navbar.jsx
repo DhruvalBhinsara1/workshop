@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import Modal from "./Modal";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { IoBag } from "react-icons/io5";
+
 
 export default function Navbar() {
   const [isLoginOpen, setLoginOpen] = useState(false);
@@ -31,6 +33,8 @@ export default function Navbar() {
           <li><Link to="/products" className="font-medium hover:text-red-500">Shop</Link></li>
           <li><Link to="/about" className="font-medium hover:text-red-500">About</Link></li>
           <li><Link to="/contact" className="font-medium hover:text-red-500">Contact</Link></li>
+          <li><Link to="/bag" className="font-medium hover:text-red-500">Bag</Link></li>
+
         </ul>
 
         {/* Desktop Auth Buttons */}

@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Modal from "./components/Modal";
 import InfoSection from "./components/InfoSection";
 
+
 export default function App() {
   return (
     <div>

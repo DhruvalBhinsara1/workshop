@@ -14,7 +14,7 @@ export default function ProductCatalog() {
   ];
 
   return (
-    <section className="pb-25 py-12 px-6 bg-red-500">
+    <section className="pb-25 py-17 px-6 bg-red-500">
       <h2 className="text-6xl text-white font-extrabold text-center mb-16">
         TOP TRENDING
       </h2>
