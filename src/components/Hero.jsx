@@ -24,11 +24,11 @@ export default function Hero() {
         <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mt-6">
           <button
             onClick={() => navigate("/products")}
-            className="px-4 py-2 sm:px-6 sm:py-3 bg-red-600 text-white rounded shadow-red-700/50 transition-all duration-300 ease-in-out transform hover:bg-red-700 hover:scale-110"
+            className="px-4 py-2 sm:px-6 sm:py-3 bg-red-600 text-white rounded-lg shadow-red-700/50 transition-all duration-300 ease-in-out transform hover:bg-red-700 hover:scale-110"
           >
             Shop Now
           </button>
-          <button className="px-4 py-2 sm:px-6 sm:py-3 border border-red-600 text-red-600 rounded shadow-red-700/50 transition-all duration-300 ease-in-out transform hover:bg-red-600 hover:text-white hover:scale-110">
+          <button className="px-4 py-2 sm:px-6 sm:py-3 border border-red-600 text-red-600 rounded-lg shadow-red-700/50 transition-all duration-300 ease-in-out transform hover:bg-red-600 hover:text-white hover:scale-110">
             Verify Yours here →
           </button>
         </div>

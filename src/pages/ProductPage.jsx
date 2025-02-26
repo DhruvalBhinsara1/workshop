@@ -2,14 +2,15 @@ import React from "react";
 
 export default function ProductPage() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
+    <div className="flex items-center justify-center h-screen bg-black">
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-gray-800">🚧 Under Development 🚧</h1>
-        <p className="text-lg text-gray-600">
-          This page is currently being worked on. Please check back soon!
+        <h1 className="text-4xl font-bold text-gray-200">🚧 Under Development 🚧</h1>
+        <p className="text-lg text-gray-200">
+          🛠️Man and Woman At work.🧑‍💻
+            Check again later!
         </p>
         <button
-          className="mt-4 px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
+          className="mt-4 px-6 py-2 bg-white text-black rounded-lg hover:bg-red-500 hover:text-white transition"
           onClick={() => window.history.back()}
         >
           Go Back
