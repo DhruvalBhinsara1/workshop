@@ -22,37 +22,38 @@ export default function App() {
   return (
     <div>
       {loading ? (
-        // 🔄 Stylish Loading Screen
-        <div className="flex items-center justify-center h-screen bg-black">
-          <div className="relative w-24 h-24">
-            <div className="absolute inset-0 rounded-full border-4 border-red-500 animate-ping"></div>
-            <div className="absolute inset-0 rounded-full border-4 border-red-700"></div>
-          </div>
-        </div>
-      ) : (
-        // 🌟 Main Content
-        <Router>
-          <Navbar />
-          <Modal />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <SplashScreen />
-                  <Hero />
-                  <InfoSection />
-                  <ProductCatalog />
-                </>
-              }
-            />
-            <Route path="/products" element={<ProductPage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
-        </Router>
-      )}
+  // 🔄 Stylish Loading Screen with Text
+  <div className="flex flex-col items-center justify-center h-screen bg-black space-y-6">
+    <div className="relative w-24 h-24">
+      <div className="absolute inset-0 rounded-full border-4 border-red-500 animate-ping"></div>
+      <div className="absolute inset-0 rounded-full border-4 border-red-700"></div>
+    </div>
+    <p className="text-white text-xl font-semibold">Getting a SneakPeak</p>
+  </div>
+) : (
+  // 🌟 Main Content
+  <Router>
+    <Navbar />
+    <Modal />
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <SplashScreen />
+            <Hero />
+            <InfoSection />
+            <ProductCatalog />
+          </>
+        }
+      />
+      <Route path="/products" element={<ProductPage />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+    <Footer />
+  </Router>
+)}
     </div>
   );
 }

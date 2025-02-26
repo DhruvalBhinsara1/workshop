@@ -4,12 +4,11 @@ import { FaInstagram } from 'react-icons/fa';
 export default function Footer() {
   return (
     <footer className="w-full bg-white/70 backdrop-blur-sm text-black">
-      {/* Top Banner */}
-      <div className="bg-yellow-400 py-4 flex justify-between items-center px-6">
-        <h2 className="font-bold text-lg sm:text-xl text-black">JOIN SNEAKPEAK AND GET 10% OFF</h2>
-        <button className="bg-black text-white px-5 py-2 rounded-lg font-medium hover:bg-gray-100 hover:text-black transition-colors">
-          SIGN UP FOR FREE →
-        </button>
+      {/* Top Banner - Centered Text */}
+      <div className="bg-yellow-400 py-4 flex justify-center items-center px-6">
+        <h2 className="font-bold text-lg sm:text-xl text-black text-center">
+          JOIN SNEAKPEAK AND GET 10% OFF
+        </h2>
       </div>
 
       {/* Footer Links */}
@@ -80,7 +79,12 @@ export default function Footer() {
         {/* FOLLOW US */}
         <div>
           <h4 className="font-bold mb-2">FOLLOW US</h4>
-          <a href="https://www.instagram.com/dhruvalbhinsara/" target="_blank" rel="noopener noreferrer" className="text-2xl">
+          <a
+            href="https://www.instagram.com/dhruvalbhinsara/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl hover:text-gray-600 transition"
+          >
             <FaInstagram />
           </a>
         </div>

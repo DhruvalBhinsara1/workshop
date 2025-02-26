@@ -34,7 +34,7 @@ export default function ProductCatalog() {
   ];
 
   return (
-    <section className="pb-25 py-17 px-6 bg-red-500">
+    <section className="pb-20 py-12 px-6 bg-red-500">
       <h2 className="text-6xl text-white font-extrabold text-center mb-16">
         TOP TRENDING
       </h2>
@@ -64,21 +64,21 @@ export default function ProductCatalog() {
               <div className="flex items-center justify-between mb-4">
                 <p className="text-lg text-white font-medium">{product.price}</p>
                 <button
-                  onClick={() => toggleWishlist(product.id)}
-                  className={`flex items-center gap-1 text-sm px-2 py-1 rounded-md transition duration-200 ${
-                    wishlist.includes(product.id)
-                      ? "bg-red-600 text-white"
-                      : "bg-white text-black hover:bg-red-600 hover:text-white"
-                  }`}
-                  title={wishlist.includes(product.id) ? "Remove from Wishlist" : "Add to Wishlist"}
-                >
-                  {wishlist.includes(product.id) ? (
-                    <FaHeart className="text-white" />
-                  ) : (
-                    <FaRegHeart className="text-red-500" />
-                  )}
-                  {wishlist.includes(product.id) ? "Wishlisted" : "Wishlist"}
-                </button>
+                    onClick={() => toggleWishlist(product.id)}
+                    className={`group flex items-center gap-1 text-sm px-2 py-1 rounded-md font-medium transition duration-200 ${
+                      wishlist.includes(product.id)
+                        ? "bg-red-600 text-white hover:bg-red-700"
+                        : "bg-white text-black hover:bg-red-600 hover:text-white"
+                    }`}
+                    title={wishlist.includes(product.id) ? "Remove from Wishlist" : "Add to Wishlist"}
+                  >
+                    {wishlist.includes(product.id) ? (
+                      <FaHeart className="text-white transition" />
+                    ) : (
+                      <FaRegHeart className="text-red-500 group-hover:text-black transition" />
+                    )}
+                    {wishlist.includes(product.id) ? "Wishlisted" : "Wishlist"}
+                  </button>
               </div>
             </div>
 
